@@ -87,3 +87,32 @@ https://be.farnell.com/vishay/si2312bds-t1-e3/mosfet-n-ch-20v-3-9a-sot-23-3/dp/2
 https://be.farnell.com/diodes-inc/ap7361-33e-13/ldo-fixed-3-3v-1a-40-to-85deg/dp/3482976
 
 
+# Din Rail Enclosure
+
+RS PRO Modular Enclosure Enclosure Type, 70.0 x 90.0 x 65.0mm, ABS DIN Rail Enclosure
+
+![image](https://user-images.githubusercontent.com/91600019/165544375-e25acbfb-de92-45d4-8fa2-6ef38c2f1d3f.png)
+
+**Gegevens:**
+
+Category Enclosures Modular for DIN rail
+Type Full
+Material ABS V0
+Variant Without gasket
+Height 65.0 mm
+Width 90.0 mm
+Length 70.0 mm
+Color Lightgray (J)
+Standards Met RoHS Compliant
+Accessories Black hook: 1.0 pcs
+Certificate number CE/032/18 Dashed line shows outline of the mounting boss under PCB board
+
+**Afmetingen**
+
+![image](https://user-images.githubusercontent.com/91600019/165544557-c7aaa88f-f07e-4351-b811-2b7809cf69ca.png)
+
+Recommended mounting holes diameter ø3,5mm
+
+**Links**
+
+https://benl.rs-online.com/web/p/din-rail-enclosures/1862295
