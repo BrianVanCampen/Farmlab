@@ -35,6 +35,10 @@ De pomp werkt op 12V en heeft een Vermogen van 20W
 
 ### Voorkant
 
+KiCad: 
+
+![image](https://user-images.githubusercontent.com/91600019/165544898-ac918bb3-d51f-4f5d-ab53-38924f0e7675.png)
+
 ![image](https://user-images.githubusercontent.com/91600019/165542330-8508beab-56f0-4ed9-92a2-73c7dabfee2c.png)
 
 ### Achterkant
