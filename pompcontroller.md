@@ -41,6 +41,9 @@ KiCad:
 
 ![image](https://user-images.githubusercontent.com/91600019/165542330-8508beab-56f0-4ed9-92a2-73c7dabfee2c.png)
 
+
+
+
 ### Achterkant
 
 ![image](https://user-images.githubusercontent.com/91600019/165542382-c488735b-913c-4839-8997-d51b20a19b3a.png)
@@ -48,6 +51,8 @@ KiCad:
 ### 3D ontwerp
 
 ![image](https://user-images.githubusercontent.com/91600019/166697643-f6117e52-276a-4865-8d4c-58d1a359b8a6.png)
+
+![image](https://user-images.githubusercontent.com/91600019/166701357-500b2369-b82d-4c3d-ab02-1e3eaf8055e9.png)
 
 
 # Componenten
