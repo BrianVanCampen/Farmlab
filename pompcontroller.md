@@ -11,7 +11,7 @@ De pomp werkt op 12V en heeft een Vermogen van 20W
 
 # Elecktrisch Schema
 
-### 
+### Microcontroller
 
 ![image](https://user-images.githubusercontent.com/91600019/165540538-81c22187-6720-4f9c-b0bf-3acebd8dc536.png)
 
@@ -57,48 +57,24 @@ KiCad:
 
 # Componenten
 
-### Pomp
 
-**Barwig Typ 04 0444 Laagspanning dompelpomp 600 l/h 6 m** 
+|Pomp|Naam|Spanning|Stroom|Vermogen|Link|
+|--------|--------|--------|--------|--------|--------|
+|![image](https://user-images.githubusercontent.com/91600019/165543210-dbb0adce-757f-4d2a-ae17-64f63fa3d84e.png)|Barwig Typ 04 0444 Laagspanning dompelpomp 600 l/h 6 m|12V|1.7A|20W|<ul>https://www.conrad.be/nl/p/barwig-typ-04-0444-laagspanning-dompelpomp-600-l-h-6-m-539090.html</ul>|
 
-![image](https://user-images.githubusercontent.com/91600019/165543210-dbb0adce-757f-4d2a-ae17-64f63fa3d84e.png)
 
 
-**Gegevens**
 
-|Spanning|Stroom|Vermogen|
-|--------|--------|--------|
-|12V|1.7A|20W|
 
-### ESP32
 
-![image](https://user-images.githubusercontent.com/91600019/165543411-e09bc5d5-a62d-436f-a4a4-63edf3d23ddb.png)
+|Component|Soort|Naam|Link|
+|--------|--------|--------|--------|
+|![image](https://user-images.githubusercontent.com/91600019/165543411-e09bc5d5-a62d-436f-a4a4-63edf3d23ddb.png)|Microcontroller|ESP32-wrover|<ul> https://www.tinytronics.nl/shop/nl/communicatie-en-signalen/draadloos/wi-fi/modules/esp32-wrover-wifi-module-pcb-antenne-aansluiting </ul> <ul>https://www.tinytronics.nl/shop/index.php?route=product/product/get_file&file=1719/esp32-wrover_datasheet_en.pdf</ul>|
+|![image](https://user-images.githubusercontent.com/91600019/165543737-006d015a-3ed4-48f4-98cd-d8b8ef467183.png)|Power mosfet|SI2312BDS-T1-E3|<ul> https://be.farnell.com/vishay/si2312bds-t1-e3/mosfet-n-ch-20v-3-9a-sot-23-3/dp/2396085 </ul> <ul>https://www.farnell.com/datasheets/2045689.pdf</ul>|
+|![image](https://user-images.githubusercontent.com/91600019/165544066-c5331e54-d0bc-4ff1-91a6-5afd2911dabf.png)|Spannings regelaar|AP7361-33E-13|<ul>https://be.farnell.com/diodes-inc/ap7361-33e-13/ldo-fixed-3-3v-1a-40-to-85deg/dp/3482976</ul>|
 
-**Links: **
 
-https://www.tinytronics.nl/shop/nl/communicatie-en-signalen/draadloos/wi-fi/modules/esp32-wrover-wifi-module-pcb-antenne-aansluiting
-https://www.tinytronics.nl/shop/index.php?route=product/product/get_file&file=1719/esp32-wrover_datasheet_en.pdf
 
-### Power mosfet
-
-**SI2312BDS-T1-E3**
-
-![image](https://user-images.githubusercontent.com/91600019/165543737-006d015a-3ed4-48f4-98cd-d8b8ef467183.png)
-
-**Links:**
-
-https://www.farnell.com/datasheets/2045689.pdf
-https://be.farnell.com/vishay/si2312bds-t1-e3/mosfet-n-ch-20v-3-9a-sot-23-3/dp/2396085
-
-### Spannings regelaar
-
-**AP7361-33E-13**
-
-![image](https://user-images.githubusercontent.com/91600019/165544066-c5331e54-d0bc-4ff1-91a6-5afd2911dabf.png)
-
-**Links:**
-
-https://be.farnell.com/diodes-inc/ap7361-33e-13/ldo-fixed-3-3v-1a-40-to-85deg/dp/3482976
 
 
 # Din Rail Enclosure
