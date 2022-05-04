@@ -45,6 +45,11 @@ KiCad:
 
 ![image](https://user-images.githubusercontent.com/91600019/165542382-c488735b-913c-4839-8997-d51b20a19b3a.png)
 
+### 3D ontwerp
+
+![image](https://user-images.githubusercontent.com/91600019/166697643-f6117e52-276a-4865-8d4c-58d1a359b8a6.png)
+
+
 # Componenten
 
 ### Pomp
