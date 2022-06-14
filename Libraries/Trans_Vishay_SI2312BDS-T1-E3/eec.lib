@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Vishay SI2312BDS-T1-E3
+#
+DEF SI2312BDS-T1-E3 Q 0 40 Y Y 1 L N
+F0 "Q" 0 300 50 H V L CNN 
+F1 "SI2312BDS-T1-E3" 0 400 50 H V L CNN 
+F2 "Vishay-SI2312BDS-T1-E3-*" 0 500 50 H I L CNN 
+F3 "https://upverter.com/datasheet/0c157f7e7be8b3f274f658ec76b91bd967b86e80.pdf" 0 600 50 H I L CNN 
+F4 "Trans" 0 700 50 H I L CNN "category"
+F5 "MOSFET N-CH 20V 3.9A SOT23-3" 0 800 50 H I L CNN "digikey description"
+F6 "SI2312BDS-T1-E3CT-ND" 0 900 50 H I L CNN "digikey part number"
+F7 "yes" 0 1000 50 H I L CNN "lead free"
+F8 "65094c45e8f35d09" 0 1100 50 H I L CNN "library id"
+F9 "Vishay" 0 1200 50 H I L CNN "manufacturer"
+F10 "781-SI2312BDS-E3" 0 1300 50 H I L CNN "mouser part number"
+F11 "SOT23-3" 0 1400 50 H I L CNN "package"
+F12 "yes" 0 1500 50 H I L CNN "rohs"
+F13 "+150°C" 0 1600 50 H I L CNN "temperature range high"
+F14 "-55°C" 0 1700 50 H I L CNN "temperature range low"
+DRAW
+X G 1 100 0 140 R 40 0 1 1 U 
+X S 2 400 -200 200 U 40 0 1 1 U 
+X D 3 400 200 120 D 40 0 1 1 U 
+P 2 1 1 0 240 -100 240 100 N
+P 2 1 1 0 270 60 270 100 N
+P 2 1 1 0 270 -80 400 -80 N
+P 2 1 1 0 270 80 400 80 N
+P 2 1 1 0 300 0 400 0 N
+P 2 1 1 0 290 0 340 30 N
+P 2 1 1 0 290 0 340 -30 N
+P 2 1 1 0 340 30 340 -30 N
+P 2 1 1 0 330 10 330 -20 N
+P 2 1 1 0 270 -60 270 -100 N
+P 2 1 1 0 270 20 270 -20 N
+P 2 1 1 0 400 -80 470 -80 N
+P 2 1 1 0 470 -80 470 80 N
+P 2 1 1 0 470 80 400 80 N
+C 400 80 10 1 1 0 N
+C 400 -80 10 1 1 0 N
+P 2 1 1 0 470 20 450 -20 N
+P 2 1 1 0 450 -20 490 -20 N
+P 2 1 1 0 490 -20 470 20 N
+P 2 1 1 0 470 20 490 20 N
+P 2 1 1 0 490 20 500 30 N
+P 2 1 1 0 470 20 450 20 N
+P 2 1 1 0 450 20 440 10 N
+ENDDRAW
+ENDDEF
+#
+# End Library

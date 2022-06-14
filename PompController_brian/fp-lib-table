@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "esp32-wrover")(type "KiCad")(uri "C:/Users/vanca/OneDrive/Desktop/2de jaar/IOT_Projects/esp32-wrover-kicad-master/esp32-wrover-kicad-master/esp32-wrover.pretty")(options "")(descr ""))
+  (lib (name "esp32-wrover-kicad-master")(type "KiCad")(uri "C:/Users/vanca/OneDrive/Desktop/2de jaar/IOT_Projects/esp32-wrover-kicad-master/esp32-wrover-kicad-master")(options "")(descr ""))
+  (lib (name "Trans_Vishay_SI2312BDS-T1-E3")(type "KiCad")(uri "C:/Users/vanca/OneDrive/Desktop/2de jaar/IOT_Projects/Trans_Vishay_SI2312BDS-T1-E3")(options "")(descr ""))
+)
