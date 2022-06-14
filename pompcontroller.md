@@ -106,3 +106,19 @@ Recommended mounting holes diameter ø3,5mm
 **Links**
 
 https://benl.rs-online.com/web/p/din-rail-enclosures/1862295
+
+
+# Software Analyse
+
+## Node-RED
+
+![image](https://user-images.githubusercontent.com/91600019/173574264-78b60f7c-5400-4d96-9245-37940dab7ebe.png)
+
+## Flow
+
+![image](https://user-images.githubusercontent.com/91600019/173576575-3e6e88d6-3985-440e-a13a-7eab3026e89c.png)
+
+## Node-RED UI
+
+![image](https://user-images.githubusercontent.com/91600019/173576680-f92d1f64-086b-4c7e-91b7-dc04285891ba.png)
+
