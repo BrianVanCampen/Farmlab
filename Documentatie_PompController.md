@@ -1,3 +1,15 @@
+# IOT project
+
+![image](https://user-images.githubusercontent.com/91600019/173871541-12e552de-ff91-490f-9943-a07fa2eff948.png)
+
+## beschrijving van het project
+
+Dit project is de 5de iteratie van Farmlab, de bedoeling is om basilicum te groeien en alles er van te automatiseren. Hiervoor moeten aantal onderdelen ontworpen of verbeterd worden. Vervolgens worden er steeds nieuwe iteraties gemaakt met steeds deze verbeteringen.
+## Wat is het doel van het project?
+
+Als een team samenwerken aan deelprojecten om zo stap voor stap een volledig project kunnen te verwezenlijken.
+
+
 # Pomp controller
 
 ### Probleem opstelling
@@ -142,7 +154,9 @@ Dit is de handleiding om te starten met Node-RED:
 ### zip van flow
 [flows.zip](https://github.com/BrianVanCampen/Farmlab/files/8910688/flows.zip)
 
+### Arduino code
 
+[PompController Arduino Code.zip](https://github.com/BrianVanCampen/Farmlab/files/8911117/PompController.Arduino.Code.zip)
 
 # Tijdelijke Problemen
 
