@@ -1,14 +1,21 @@
 # IOT project
 
-![image](https://user-images.githubusercontent.com/91600019/173871541-12e552de-ff91-490f-9943-a07fa2eff948.png)
+![image](https://user-images.githubusercontent.com/91600019/173873760-71ceed04-5d37-45b9-beb5-00eb2bc54d6a.png)
 
 ## beschrijving van het project
 
 Dit project is de 5de iteratie van Farmlab, de bedoeling is om basilicum te groeien en alles er van te automatiseren. Hiervoor moeten aantal onderdelen ontworpen of verbeterd worden. Vervolgens worden er steeds nieuwe iteraties gemaakt met steeds deze verbeteringen.
+
 ## Wat is het doel van het project?
 
 Als een team samenwerken aan deelprojecten om zo stap voor stap een volledig project kunnen te verwezenlijken.
 
+Deze iteratie heeft als doel de 4de iteratie te fine tunen:
+
+    Maken van 2 kast clones
+    Minimaal 1 keer oogsten
+    Automatisatie
+    Documentatie
 
 # Pomp controller
 
@@ -131,8 +138,11 @@ Dit is de handleiding om te starten met Node-RED:
 2. je scrollt tot aan Get Started 
 ![image](https://user-images.githubusercontent.com/91600019/173856720-546ec266-002b-4d37-b8f8-440766e076b4.png)
 3. volg deze stappen: https://nodered.org/docs/getting-started/local
-4. Je typt in node-red
-5. je gaat naar deze link
+4. Je typt in de console
+
+       $ node-red
+
+6. je gaat naar deze link
 ![image](https://user-images.githubusercontent.com/91600019/173860103-977e0776-5aac-4d56-8cdd-93d900304497.png)
 6. Hier kan je de Flow van het project aanmaken
 ![image](https://user-images.githubusercontent.com/91600019/173860481-4481ca81-cfea-4074-85e7-046a2ac4e456.png)
