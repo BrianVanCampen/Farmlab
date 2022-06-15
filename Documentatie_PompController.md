@@ -10,19 +10,18 @@ Dit project is de 5de iteratie van Farmlab, de bedoeling is om basilicum te groe
 
 Als een team samenwerken aan deelprojecten om zo stap voor stap een volledig project kunnen te verwezenlijken.
 
-Deze iteratie heeft als doel de 4de iteratie te fine tunen:
+Deze iteratie heeft ook als doel de 4de iteratie te fine tunen:
 
-    Maken van 2 kast clones
-    Minimaal 1 keer oogsten
-    Automatisatie
-    Documentatie
+- Herwerken van PCBs
+- XY-systeem
+- automatisering
+- Documentatie
 
 # Pomp controller
 
-### Probleem opstelling
+### Beschrijving pompcontroller
 
-Maken van een pomp controller die een ESP32 naar 2 Pompen kan aansturen.
-De pomp werkt op 12V en heeft een Vermogen van 20W
+De pompcontroller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. Basilicum heeft verschillende voedingsstoffen nodig om te kunnen groeien. Kalium en calcium zijn twee voedingswaarden waar basilicum voldoende van moet krijgen. Deze moeten op een 1:1 basis worden gegeven. Daarnaast spelen magnesium en stikstof nog een significante rol. Het magnesium gehalte zou 50 ppm moeten zijn. Aan de hand van de electric conductivity (EC) kan er worden gekeken of de basilicum genoeg voedingsstoffen kan opnemen. De EC is het zoutgehalte in het voedingswater en wordt uitgedrukt in μS/cm. De EC zou een waarde tussen 1.6 en 2.2 μS/cm moeten hebben. (Miller, 2020; Smith, 2021; Deepak, 2020; Sandy, 2021)
 
 # Blokdiagram
 
@@ -129,8 +128,68 @@ https://benl.rs-online.com/web/p/din-rail-enclosures/1862295
 
 # Software Analyse
 
+## Data
 
-## Handleiding
+Data wordt grotendeels verstuurd tussen de centrale ESP32 (broker MQTT en Node-RED) en de ESP32's aanwezig op de PCB's.
+Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
+
+**PompController:**
+
+<ol>
+
+  <ul>
+    <li>Node-RED -> Centrale RaspberryPi -> ESP32 op pompcontroller:</li>
+    <ul>
+      <li>Topics: Pump/water OF Pump/nutrients</li>
+      <li>String "on" => Pomp gaat aan</li>
+      <li>String "off" => Pomp gaan uit</li>
+    </ul>
+</ol>
+    
+
+| HTTP        |MQTT   |
+| ----------- | ----------- |
+| Vrij zwaar protocol: de header van een package is al groter dan 1 bericht van MQTT
+(min +- 26 bytes header vs enkele bytes MQTT message) | Weinig data → meer keuzes op fysieke laag, trage links worden mogelijk |
+| Software stack / Software stack / Library Library is vrij zwaar heeft een zeer kleine footprint | Lightweight → protocol last ook in kleine devices, sensors.. met weinig geheugen & cpu power. |
+| Geen ingebouwde Standaard enkele QoS mogelijkheden| Standardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack|
+| | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
+
+=>MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in de opstelling.
+
+<div style="page-break-after: always"></div>
+
+### IOT Dashboard/Platform
+
+**Er is een platform/server nodig om:**
+
+- Verzamelde data weer te geven
+- Controle opdrachten te sturen
+- Automatisatie programma's te beheren
+
+|Node-RED|Thingsboard|Freeboard.io|
+| ----------- | ----------- | ----------- |
+| Open-source | Open-source+ professional(betalend) | Open-source |
+| Flows | Entities |  |
+| no API | API |  |
+| Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box (Not actively developed Plugin available) |
+| Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
+
+=>Node-RED gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van het project (Thingsboard zou te uitgebreid zijn).
+
+(De Gendt et al., 2021)
+
+<div style="page-break-after: always"></div>
+
+## Beschrijving van de mogelijke interfaces
+
+Deze kast maakt gebruik van Node-RED die gaat communniceren met een centrale RaspberryPi. Hieruit worden de verschillende controller/sensor ESP32’s aangestuurd.
+
+
+![image](https://user-images.githubusercontent.com/91600019/173879215-64e4fd66-bb5f-45b5-990f-fdcb946a1600.png)
+
+
+## Handleiding Web Interactie
 
 Dit is de handleiding om te starten met Node-RED:
 
