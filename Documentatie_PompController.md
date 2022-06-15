@@ -261,8 +261,3 @@ Geen gepaste MOSFET gebruikt(Through-hole vs SMD) ,IRF9530N inplaats van SI2312B
 
 
 
-
-
-
-
-
