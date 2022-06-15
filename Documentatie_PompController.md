@@ -2,7 +2,10 @@
 
 ![image](https://user-images.githubusercontent.com/91600019/173873760-71ceed04-5d37-45b9-beb5-00eb2bc54d6a.png)
 
+Link naar PDF : [IOTProjects_Documentatie_pompcontroller_brian.pdf](https://github.com/BrianVanCampen/Farmlab/files/8911796/IOTProjects_Documentatie_pompcontroller_brian.pdf)
+
 ## beschrijving van het project
+
 
 Dit project is de 5de iteratie van Farmlab, de bedoeling is om basilicum te groeien en alles er van te automatiseren. Hiervoor moeten aantal onderdelen ontworpen of verbeterd worden. Vervolgens worden er steeds nieuwe iteraties gemaakt met steeds deze verbeteringen.
 
