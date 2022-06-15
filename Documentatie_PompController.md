@@ -110,15 +110,76 @@ https://benl.rs-online.com/web/p/din-rail-enclosures/1862295
 
 # Software Analyse
 
-## Node-RED
 
-![image](https://user-images.githubusercontent.com/91600019/173574264-78b60f7c-5400-4d96-9245-37940dab7ebe.png)
+## Handleiding
 
-## Flow
+Dit is de handleiding om te starten met Node-RED:
 
-![image](https://user-images.githubusercontent.com/91600019/173625630-7595884a-5610-472b-9898-35f9d49a7709.png)
+1. je surft naar https://nodered.org/
+2. je scrollt tot aan Get Started 
+![image](https://user-images.githubusercontent.com/91600019/173856720-546ec266-002b-4d37-b8f8-440766e076b4.png)
+3. volg deze stappen: https://nodered.org/docs/getting-started/local
+4. Je typt in node-red
+5. je gaat naar deze link
+![image](https://user-images.githubusercontent.com/91600019/173860103-977e0776-5aac-4d56-8cdd-93d900304497.png)
+6. Hier kan je de Flow van het project aanmaken
+![image](https://user-images.githubusercontent.com/91600019/173860481-4481ca81-cfea-4074-85e7-046a2ac4e456.png)
+7. Voor de pomp controller kan je het bestand importeren boven aan rechts of CTRL+I 
+![image](https://user-images.githubusercontent.com/91600019/173861188-8d6f1d11-af6c-4de9-aa65-3989a1abe84f.png)
+8. zorg er ook voor dat je in Node-RED de plugin Node-red-dashboard installeert door bovenaan rechts manage pallete te kiezen 
+9. vervolgens zoek je Node-red-dashboard in de install tab
+![image](https://user-images.githubusercontent.com/91600019/173862159-83b7e537-2add-4789-9cc7-1186018d7cdd.png)
 
-## Node-RED UI
+10. klik op dashboard bovenaan rechts
+![image](https://user-images.githubusercontent.com/91600019/173865857-e49763fd-dbe3-4b9e-a35d-ddac99b32a12.png)
 
-![image](https://user-images.githubusercontent.com/91600019/173625739-3955acbe-720b-484c-bc5a-a9516b3409c1.png)
+11. hier kan je van alles aanpassen
+12. Om de UI te openen klik je op het vierkantje bovenaan rechts
+![image](https://user-images.githubusercontent.com/91600019/173864979-6ebb3724-bc87-42da-8f91-b7f8c05d3ab4.png)
+![image](https://user-images.githubusercontent.com/91600019/173865114-ac08e7da-b212-4ddf-b465-8797c852b685.png)
+
+
+### zip van flow
+[flows.zip](https://github.com/BrianVanCampen/Farmlab/files/8910688/flows.zip)
+
+
+
+# Tijdelijke Problemen
+
+![image](https://user-images.githubusercontent.com/91600019/173864206-1f95dce7-247d-451b-9906-92af991ca766.png)
+
+
+## Testen van PCB
+
+### SpanningsRegelaar
+
+Foute footprint bij spanningsregelaar 5V output in plaats van 3V3 (zie foto)
+![image](https://user-images.githubusercontent.com/91600019/173863423-bda24eab-996c-40e8-9d0a-559c63ca2e81.png)
+
+Max waarde ESP32: 
+
+![image](https://user-images.githubusercontent.com/91600019/173866000-3f70db04-26b7-4de7-b629-4c7d9ea35834.png)
+
+De ESP32 kan maar 3.9V max aan 
+
+### Power MOSFET
+
+Geen gepaste MOSFET gebruikt(Through-hole vs SMD) ,IRF9530N inplaats van SI2312BDS-T1-E3
+
+
+![image](https://user-images.githubusercontent.com/91600019/173863764-473ebb0b-bef5-4efc-9a93-e91127ea9c06.png)
+
+![image](https://user-images.githubusercontent.com/91600019/173863755-8312c63e-c276-41d7-865a-5b5e14d27e15.png)
+
+## Mogelijke uitbreidingen 
+
+- Verkleinen van pcb
+- Sensoren toevoegen
+
+
+
+
+
+
+
 
